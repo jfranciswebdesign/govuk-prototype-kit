@@ -13,9 +13,9 @@
 .app-step-nav-header {
   position: relative;
   padding: 10px;
-  background: #f8f8f8;
-  border-top: solid 1px #bfc1c3;
-  border-bottom: solid 1px #bfc1c3;
+  background: govuk-colour("grey-4");
+  border-top: solid 1px $govuk-border-colour;
+  border-bottom: solid 1px $govuk-border-colour;
 }
 @media (min-width: 641px) {
   .app-step-nav-header {
@@ -54,7 +54,7 @@
 }
 
 .app-step-nav-related {
-  border-top: 2px solid #005ea5;
+  border-top: 2px solid $govuk-link-colour;
   margin-bottom: 45px;
 }
 
@@ -119,7 +119,7 @@
 }
 
 .app-step-nav__button {
-  color: #005ea5;
+  color: $govuk-link-colour;
   cursor: pointer;
   background: none;
   border: 0;
@@ -139,7 +139,7 @@
   display: inline-block;
   padding: 0;
   text-align: left;
-  color: #0b0c0c;
+  color: govuk-colour("black");
 }
 @media (min-width: 641px) {
   .app-step-nav__button--title {
@@ -181,7 +181,7 @@
 }
 
 .app-step-nav__button--controls:hover {
-  color: #2b8cc4;
+  color: $govuk-link-hover-colour;
 }
 
 .app-step-nav--large .app-step-nav__button--controls {
@@ -215,7 +215,7 @@
   z-index: 2;
   width: 0;
   height: 100%;
-  border-left: solid 2px #bfc1c3;
+  border-left: solid 2px $govuk-border-colour;
   background: #fff;
   left: 0;
   margin-left: 12px;
@@ -243,7 +243,7 @@
   margin-left: 6.5px;
   width: 13px;
   height: 0;
-  border-bottom: solid 2px #bfc1c3;
+  border-bottom: solid 2px $govuk-border-colour;
 }
 
 .app-step-nav__step:last-child:after {
@@ -271,7 +271,7 @@
 .app-step-nav__step--active .app-step-nav__substep:after,
 .app-step-nav__step--active:after,
 .app-step-nav__step--active:last-child:before {
-  border-color: #0b0c0c;
+  border-color: govuk-colour("black");
 }
 
 .app-step-nav__circle {
@@ -284,7 +284,7 @@
   left: 0;
   width: 26px;
   height: 26px;
-  color: #0b0c0c;
+  color: govuk-colour("black");
   background: #fff;
   border-radius: 100px;
   text-align: center;
@@ -303,7 +303,7 @@
   text-transform: none;
   font-size: 16px;
   line-height: 23px;
-  border: solid 2px #bfc1c3;
+  border: solid 2px $govuk-border-colour;
 }
 @media (min-width: 641px) {
   .app-step-nav__circle--number {
@@ -370,7 +370,7 @@
 
 .app-step-nav__header {
   padding: 15px 0;
-  border-top: solid 2px #dee0e2;
+  border-top: solid 2px govuk-colour("grey-3");
 }
 
 .app-step-nav--active .app-step-nav__header {
@@ -379,7 +379,7 @@
 
 .app-step-nav__header:hover .app-step-nav__button,
 .app-step-nav__header:hover .app-step-nav__circle {
-  color: #005ea5;
+  color: $govuk-link-colour;
 }
 
 .app-step-nav__header:hover .app-step-nav__toggle-link {
@@ -427,7 +427,7 @@
   font-size: 14px;
   line-height: 1.2;
   display: block;
-  color: #005ea5;
+  color: $govuk-link-colour;
 }
 @media (min-width: 641px) {
   .app-step-nav__toggle-link {
@@ -551,7 +551,7 @@
   width: 16px;
   height: 16px;
   margin-top: -8px;
-  background: #0b0c0c;
+  background: govuk-colour("black");
   border: solid 2px #fff;
   border-radius: 100px;
 }
@@ -563,20 +563,20 @@
 }
 
 .app-step-nav__list-item--active .app-step-nav__link {
-  color: #0b0c0c;
+  color: govuk-colour("black");
   text-decoration: none;
 }
 
 .app-step-nav__list-item--active .app-step-nav__link:active,
 .app-step-nav__list-item--active .app-step-nav__link:link,
 .app-step-nav__list-item--active .app-step-nav__link:visited {
-  color: #0b0c0c;
+  color: govuk-colour("black");
 }
 
 .app-step-nav__context {
   display: inline-block;
   font-weight: normal;
-  color: #6f777b;
+  color: $govuk-secondary-text-colour;
 }
 
 .app-step-nav__context:before {
@@ -586,7 +586,7 @@
 .app-step-nav__help {
   position: relative;
   padding: 15px 0;
-  border-top: solid 2px #dee0e2;
+  border-top: solid 2px govuk-colour("grey-3");
 }
 
 .app-step-nav__help:after {
@@ -595,7 +595,7 @@
   z-index: 2;
   width: 0;
   height: 100%;
-  border-left: dotted 2px #bfc1c3;
+  border-left: dotted 2px $govuk-border-colour;
   background: #fff;
   left: 0;
   margin-left: 12px;
@@ -626,7 +626,7 @@
 .app-step-nav__substep {
   position: relative;
   padding-top: 15px;
-  border-top: solid 2px #dee0e2;
+  border-top: solid 2px govuk-colour("grey-3");
 }
 
 .app-step-nav__substep:after {
@@ -635,7 +635,7 @@
   z-index: 2;
   width: 0;
   height: 100%;
-  border-left: solid 2px #bfc1c3;
+  border-left: solid 2px $govuk-border-colour;
   background: #fff;
   left: 0;
   margin-left: 12px;
