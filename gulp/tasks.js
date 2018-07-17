@@ -18,8 +18,10 @@ gulp.task('generate-assets', function (done) {
   runSequence('clean',
                 'sass',
                 'sass-documentation',
+                'sass-v6',
                 'copy-assets',
-                'copy-documentation-assets', done)
+                'copy-documentation-assets',
+                'copy-v6-assets', done)
 })
 
 gulp.task('watch', function (done) {

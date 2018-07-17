@@ -18,3 +18,9 @@ gulp.task('copy-documentation-assets', function () {
     config.paths.docsAssets + '/**'])
   .pipe(gulp.dest(config.paths.public))
 })
+
+gulp.task('copy-v6-assets', function () {
+  return gulp.src(['!app/v6/assets/sass{,/**/*}',
+    'app/v6/assets' + '/**'])
+  .pipe(gulp.dest(config.paths.public + '/v6'))
+})
